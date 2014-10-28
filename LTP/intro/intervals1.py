@@ -12,7 +12,7 @@ result = []
 first = max(numbers[0], numbers[2])
 second = min(numbers[1], numbers[3])
 
-if(numbers[1] > numbers[2]):
+if(numbers[1] >= numbers[2]):
 	result = '[' + str(first) + ',' + str(second) + ']'
 
 print result
