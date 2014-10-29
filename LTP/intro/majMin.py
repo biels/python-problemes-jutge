@@ -12,5 +12,5 @@ else:
 
 letter = letter.upper() if(letter.islower()) else letter.lower() 
 
-# print(letter) ads new line
+# print(letter) adds new line
 sys.stdout.write(letter)
