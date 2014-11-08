@@ -1,16 +1,17 @@
 
-import sys, re, statistics
-#statistics --> python 3.4
+import sys, re
 
 input = sys.stdin.readline()
-input = re.findall('-?\d+', input)
+input = re.findall('-?\d*\.?\d+', input)
 
-numbers = list(map(int, input))
+#numbers = list(map(int, input))
+numbers = [float(each) for each in input]
 
+mean = sum(numbers)/len(numbers)
+
+'''
+import statistics
 mean = statistics.mean(numbers)
+'''
 
-#precission 2
-print("%.2f" %mean)
-
-
-
+print("%.2f" %mean) #precission 2
