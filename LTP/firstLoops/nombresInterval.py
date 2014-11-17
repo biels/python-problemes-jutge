@@ -1,10 +1,10 @@
 
 import sys, re
 
-input = sys.stdin.readline()
-input = re.findall('-?\d+', input)
+numbers = sys.stdin.readline()
+numbers = re.findall('-?\d+', numbers)
 
-numbers = list(map(int, input))
+numbers = list(map(int, numbers))
 
 if (numbers[0] <= numbers[1]):
 	for num in range(numbers[0], numbers[1]):

@@ -1,11 +1,11 @@
 
 import sys, re
 
-input = sys.stdin.readline()
-input = re.findall('-?\d+', input)
+number = sys.stdin.readline()
+number = re.findall('-?\d+', number)
 
 #slice --> http://stackoverflow.com/questions/509211/explain-pythons-slice-notation
-number = input[0][::-1]
+number = number[0][::-1]
 
 print(number)
 	

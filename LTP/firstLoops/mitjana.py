@@ -1,11 +1,11 @@
 
 import sys, re
 
-input = sys.stdin.readline()
-input = re.findall('-?\d*\.?\d+', input)
+numbers = sys.stdin.readline()
+numbers = re.findall('-?\d*\.?\d+', numbers)
 
 #numbers = list(map(int, input))
-numbers = [float(each) for each in input]
+numbers = [float(each) for each in numbers]
 
 mean = sum(numbers)/len(numbers)
 

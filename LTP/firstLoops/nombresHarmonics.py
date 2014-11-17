@@ -1,10 +1,10 @@
 
 import sys, re
 
-input = sys.stdin.readline()
-input = re.findall('-?\d+', input)
+number = sys.stdin.readline()
+number = re.findall('-?\d+', input)
 
-number = int(input[0])
+number = int(number[0])
 result = 0
 
 for num in range(1, number + 1):

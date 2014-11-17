@@ -1,14 +1,13 @@
 
 import sys, re
 
-input =  sys.stdin.readline()
-
-input = re.findall('\w+', input)
+words =  sys.stdin.readline()
+words = re.findall('\w+', words)
 
 comp = ' = '
-if(input[0] > input[1]): 
+if(words[0] > words[1]): 
 	comp = ' > '
-elif(input[0] < input[1]):
+elif(words[0] < words[1]):
 	comp = ' < '
 
-print(input[0] + comp + input[1])
+print(words[0] + comp + wordss[1])

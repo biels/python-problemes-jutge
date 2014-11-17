@@ -1,7 +1,7 @@
 
 import sys
 
-input = int(sys.stdin.readline()[0])
+number = int(sys.stdin.readline()[0])
 
-for num in range(input+1):
+for num in range(number+1):
 	print(num)

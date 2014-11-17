@@ -9,10 +9,10 @@ def gcd(a, b):
     return a
 
 
-input = sys.stdin.readline()
-input = re.findall('-?\d+', input)
+numbers = sys.stdin.readline()
+numbers = re.findall('-?\d+', numbers)
 
-numbers = list(map(int, input))
+numbers = list(map(int, numbers))
 
 gcd = gcd(numbers[0], numbers[1])
 

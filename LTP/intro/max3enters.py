@@ -1,10 +1,10 @@
 
 import sys, re
 
-input = sys.stdin.readline()
-input = re.findall('-?\d+', input)
+numbers = sys.stdin.readline()
+numbers = re.findall('-?\d+', numbers)
 
-numbers = map(int, input)
+numbers = list(map(int, numbers))
 
 print(max(numbers))
 

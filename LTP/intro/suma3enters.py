@@ -1,11 +1,11 @@
 
 import sys, re
 
-# the line is a string; ex: '1 2 3'
-input = sys.stdin.readline()
+# the line is a string; ex: '1 
+numbers = sys.stdin.readline()
 # string to digit array; ex:['1', '2', '3']
-input = re.findall('-?\d+', input)
+numbers = re.findall('-?\d+', numbers)
 #parse to int
-numbers = map(int, input)
+numbers = list(map(int, numbers))
 
-print sum(numbers)
+print(sum(numbers))

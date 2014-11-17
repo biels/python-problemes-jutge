@@ -1,6 +1,6 @@
 import sys, re
 
-input = sys.stdin.readline()
-numAs = re.findall('a+', input)
+As = sys.stdin.readline()
+numAs = re.findall('a+', As)
 
 print(len(numAs))

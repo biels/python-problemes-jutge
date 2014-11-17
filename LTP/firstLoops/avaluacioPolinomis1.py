@@ -2,14 +2,14 @@
 import sys, re
 
 #read variable
-input = sys.stdin.readline()
-input = re.findall('-?\d*\.?\d+', input)
-var = float(input[0])
+var = sys.stdin.readline()
+var = re.findall('-?\d*\.?\d+', var)
+var = float(var[0])
 
 #read coefficients
-input = sys.stdin.readline()
-input= re.findall('-?\d*\.?\d+', input)
-coeffs = [float(each) for each in input]
+coeffs = sys.stdin.readline()
+coeffs = re.findall('-?\d*\.?\d+', coeffs)
+coeffs = [float(each) for each in coeffs]
 
 numCoeffs = len(coeffs)
 result = coeffs[0]
