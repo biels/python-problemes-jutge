@@ -11,3 +11,6 @@ python 3.4
 1.LTP: Learning to program
   * introduction
   * first loops
+  * loops inside loops
+  * first procedures
+  * recursion
