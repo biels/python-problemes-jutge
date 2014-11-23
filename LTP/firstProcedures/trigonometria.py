@@ -1,14 +1,13 @@
 
 import sys, re
-from math import sin, cos
+from math import radians, sin, cos
 
+line = 1
+while line:
+	
+	line = sys.stdin.readline()
+	angle = re.findall('-?\d*\.?\d+', line)
+	angle = int(angle[0])
+	rads = radians(angle)
 
-while True:
-	number = input()
-	print(number)
-
-#inp = sys.stdin.readline()
-#numbers = input()
-#numbers = re.findall('-?\d*\.?\d+', input)
-
-print(numbers)
+	print('%.6f %.6f' %(sin(rads), cos(rads)))
