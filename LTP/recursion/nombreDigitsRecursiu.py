@@ -13,7 +13,6 @@ def nombre_digits (n):
 #
 line = 1
 while line:
-	
 	line = sys.stdin.readline()
 	number = re.findall('\d+', line)
 	number = int(number[0])
