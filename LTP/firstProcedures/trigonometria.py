@@ -1,13 +1,12 @@
 
 import sys, re
-from math import radians, sin, cos
+from math import sqrt
 
 line = 1
 while line:
 	
 	line = sys.stdin.readline()
-	angle = re.findall('-?\d*\.?\d+', line)
-	angle = int(angle[0])
-	rads = radians(angle)
+	number = re.findall('\d+', line)
+	number = int(number[0])
 
-	print('%.6f %.6f' %(sin(rads), cos(rads)))
+	print('%.d %.6f' %( number * number, sqrt(number)))
