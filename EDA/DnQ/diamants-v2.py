@@ -5,24 +5,21 @@ import sys, re
 def canMarry (dValue, values) :
 
 	if values == [] :
-		print('single')
-		return
+		return 'single'
 
 	currentValue = values[0] + values[-1]
 
 	if currentValue == dValue :
-		print('married')
-		return
+		return 'married'
 	else :
 		if currentValue > dValue :
  			values = values[:-1]
 		else :
 			values = values[1:]
-		canMarry(dValue, values)
+		return canMarry(dValue, values)
 
 #
 line = sys.stdin.readline()
-
 while line != '0 0\n' :
 
 	diamondValue = int(re.findall('\d+', line)[0])
@@ -32,7 +29,7 @@ while line != '0 0\n' :
 	values = list(map(int, values))
 	values.sort()
 
-	canMarry(diamondValue, values)
+	print(canMarry(diamondValue, values))
 	
 	line = sys.stdin.readline()
 
