@@ -3,10 +3,14 @@ import sys, re
 from functools import reduce
 
 #functions
-def digitsProduct(number):
+'''def digitsProduct(number):
 	digits = list(map(int, str(number)))
 	product = reduce(lambda x, y: x * y, digits)
+	return product'''
 
+def digitsProduct(number):
+	digits = str(number)
+	product = reduce(lambda pre, curr: pre * int(curr), digits, 1)
 	return product
 
 #
